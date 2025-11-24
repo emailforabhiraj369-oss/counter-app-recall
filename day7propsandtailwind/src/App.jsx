@@ -8,12 +8,13 @@ import Card from './components/Card'
 function App() {
 const arr=[1,2,3]
 const obj={uname:"JLO",age:55}
+const clickBtn ="Visit ME";
 
   return (
    <>
    <div  className='text-6xl bg-green-400 mb-4'>Hello World</div>
-    <Card  username={arr[0]}/>
-    <Card  username={obj.uname}/>
+    <Card  username={arr[0]} btnText={clickBtn}  />
+    <Card  username={obj.uname} />
     <Card  username="Anthony"/>
    </>
   )
